@@ -2,7 +2,7 @@ from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for, abort
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='templaes')
 app.config["SECRET_KEY"] = "dev-secret"
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///ecommerce.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
