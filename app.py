@@ -49,7 +49,7 @@ def validate_value(attr: Attribute, raw: str):
     elif t == "date":
         datetime.strptime(str(raw), "%Y-%m-%d")
 
-@app.before_first_request
+@app.before_request
 def init_db():
     db.create_all()
 
